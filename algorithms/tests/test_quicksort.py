@@ -16,7 +16,6 @@ def test_quicksort_returns_list():
     """
     sample_array = [6,5,4,3,8,9]
     a = QuickSort(sample_array)
-    a.sort()
     # check if array is list
     assert isinstance(a.result,list)
 
@@ -26,7 +25,6 @@ def test_quicksort_returns_list():
 def test_quicksort_check_keys():
     sample_array = [6,5,4,3,8,9]
     a = QuickSort(sample_array)
-    a.sort()
     assert "list" in a.result[0]
 
 def test_quicksort_output():
@@ -35,6 +33,9 @@ def test_quicksort_output():
     """
     sample_array = [6,5,4,3,1,9]
     a = QuickSort(sample_array)
-    a.sort()
     assert a.array == sorted(sample_array)
 
+def test_quicksort_serialize():
+    sample_array = [6,5,4,3,1,9]
+    a = QuickSort(sample_array)
+    assert isinstance(a.serialize(), str)

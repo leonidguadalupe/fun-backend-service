@@ -114,6 +114,17 @@ argon2 = ["argon2-cffi (>=16.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+category = "main"
+description = "Web APIs for Django, made easy."
+name = "djangorestframework"
+optional = false
+python-versions = ">=3.5"
+version = "3.11.0"
+
+[package.dependencies]
+django = ">=1.11"
+
+[[package]]
 category = "dev"
 description = "execnet: rapid multi-Python deployment"
 name = "execnet"
@@ -318,7 +329,7 @@ python-versions = "*"
 version = "0.1.8"
 
 [metadata]
-content-hash = "679cc6c676b5ea43ef1b6eea18f89135eedbc3defa093ad47d0962e994bd5608"
+content-hash = "b5cb0dcda4a1d51819a60153b8a46cc8a22e6ee4ebf6ec0975884f4e491e1ff6"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -390,6 +401,10 @@ coverage = [
 django = [
     {file = "Django-3.0.2-py3-none-any.whl", hash = "sha256:4f2c913303be4f874015993420bf0bd8fd2097a9c88e6b49c6a92f9bdd3fb13a"},
     {file = "Django-3.0.2.tar.gz", hash = "sha256:8c3575f81e11390893860d97e1e0154c47512f180ea55bd84ce8fa69ba8051ca"},
+]
+djangorestframework = [
+    {file = "djangorestframework-3.11.0-py3-none-any.whl", hash = "sha256:05809fc66e1c997fd9a32ea5730d9f4ba28b109b9da71fccfa5ff241201fd0a4"},
+    {file = "djangorestframework-3.11.0.tar.gz", hash = "sha256:e782087823c47a26826ee5b6fa0c542968219263fb3976ec3c31edab23a4001f"},
 ]
 execnet = [
     {file = "execnet-1.7.1-py2.py3-none-any.whl", hash = "sha256:d4efd397930c46415f62f8a31388d6be4f27a91d7550eb79bc64a756e0056547"},

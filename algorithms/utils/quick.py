@@ -6,6 +6,7 @@ from .sort import Sort
 class QuickSort(Sort):
     def __init__(self, array):
         super().__init__(array)
+        self.sort() # sort after array init
     
     def _swap(self: object, array: list, left: int, right: int) -> list:
         array[left], array[right] = array[right], array[left]
@@ -54,5 +55,4 @@ class QuickSort(Sort):
     
     # Let's sort and serialize boiz
     def serialize(self) -> str:
-        self.result = self.sort()
         return json.dumps(self.result)
